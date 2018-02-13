@@ -21,14 +21,5 @@ pipeline {
 		bat "${env.SAG_HOME}/common/AssetBuildEnvironment/ant/bin/ant -DSAGHome=${env.SAG_HOME} -DSAG_CI_HOME=${env.SAG_CI_HOME} -DprojectName=${env.JOB_NAME} deploy"
             }
         }
- 	
-	stage('Email'){
- 	        mail body: 'project build successful',
-                     from: 'saginsight.demo@gmail.com',
-                     replyTo: 'noreply@gmail.com',
-                     subject: 'project build successful',
-                     to: 'chandra.kotha@kelltontech.com'
-       }
-       
     }
 }
