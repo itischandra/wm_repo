@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="TestcaseDemo_TestSuite" name="TestcaseDemo_TestSuite">
+    <webMethodsTestCase name="region_USA">
+        <service folder="TestcaseDemo.services" name="populateAddress">
+            <input>
+                <file filename="resources/test/data/TestcaseDemo_input.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/TestcaseDemo_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+    <webMethodsTestCase name="region_EUROPE">
+        <service folder="TestcaseDemo.services" name="populateAddress">
+            <input>
+                <file filename="resources/test/data/input_EUROPE.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/test/data/output_EUROPE.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>

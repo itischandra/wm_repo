@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <value name="street">Mclean</value>
+    <value name="city">VA 22102</value>
+    <value name="region">EUROPE</value>
+  </record>
+</IDataXMLCoder>
